@@ -6991,7 +6991,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="JP3" gate="A" x="139.7" y="22.86" rot="R90"/>
 <instance part="JP4" gate="A" x="251.46" y="121.92"/>
 <instance part="JP5" gate="A" x="111.76" y="198.12" rot="R90"/>
-<instance part="U$2" gate="G$1" x="38.1" y="177.8"/>
+<instance part="U$2" gate="G$1" x="45.72" y="175.26"/>
 </instances>
 <busses>
 </busses>
