@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -271,8 +271,6 @@
 </package>
 <package name="BM78SPP05MC2/NC2">
 <wire x1="0" y1="0" x2="12" y2="0" width="0.127" layer="21"/>
-<wire x1="12" y1="0" x2="12" y2="15" width="0.127" layer="21"/>
-<wire x1="0" y1="15" x2="0" y2="0" width="0.127" layer="21"/>
 <smd name="P$1" x="0.2" y="13.9" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$2" x="0.2" y="12.8" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$3" x="0.2" y="11.7" dx="1.5" dy="0.7" layer="1"/>
@@ -285,7 +283,6 @@
 <smd name="P$10" x="0.2" y="4" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$11" x="0.2" y="2.9" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$12" x="0.2" y="1.8" dx="1.5" dy="0.7" layer="1"/>
-<smd name="P$13" x="11.8" y="13.9" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$14" x="11.8" y="11.7" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$15" x="11.8" y="10.6" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$16" x="11.8" y="9.5" dx="1.5" dy="0.7" layer="1"/>
@@ -303,11 +300,23 @@
 <smd name="P$28" x="7.1" y="0.2" dx="1.5" dy="0.7" layer="1" rot="R90"/>
 <smd name="P$29" x="8.2" y="0.2" dx="1.5" dy="0.7" layer="1" rot="R90"/>
 <smd name="P$30" x="9.3" y="0.2" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<wire x1="2.4" y1="15" x2="1.6" y2="15" width="0.127" layer="1" curve="-180"/>
-<wire x1="0" y1="15" x2="1.6" y2="15" width="0.127" layer="1"/>
-<wire x1="2.4" y1="15" x2="12" y2="15" width="0.127" layer="1"/>
-<text x="0" y="17.145" size="1.27" layer="21">&gt;NAME</text>
-<text x="0" y="15.24" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="18" width="0.127" layer="21"/>
+<wire x1="0" y1="18" x2="0" y2="22" width="0.127" layer="21"/>
+<wire x1="0" y1="22" x2="1.6" y2="22" width="0.127" layer="21"/>
+<wire x1="1.6" y1="22" x2="2.4" y2="22" width="0.127" layer="21"/>
+<wire x1="2.4" y1="22" x2="12" y2="22" width="0.127" layer="21"/>
+<wire x1="12" y1="22" x2="12" y2="18" width="0.127" layer="21"/>
+<wire x1="12" y1="18" x2="12" y2="16" width="0.127" layer="21"/>
+<wire x1="12" y1="16" x2="12" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="18" x2="9.2" y2="18" width="0.127" layer="21"/>
+<wire x1="9.2" y1="18" x2="12" y2="18" width="0.127" layer="21"/>
+<wire x1="2.4" y1="22" x2="1.6" y2="22" width="0.127" layer="21" curve="-180"/>
+<wire x1="9.2" y1="18" x2="9.2" y2="16" width="0.127" layer="21"/>
+<wire x1="9.2" y1="16" x2="12" y2="16" width="0.127" layer="21"/>
+<smd name="P$13" x="0.2" y="20.1" dx="1.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P$31" x="0.2" y="21.2" dx="1.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P$32" x="11.8" y="20.1" dx="1.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P$33" x="11.8" y="21.2" dx="1.5" dy="0.7" layer="1" rot="R180"/>
 </package>
 <package name="MM74HC595MTCXCT-ND">
 <description>&lt;b&gt;16-Lead Plastic TSSOP (4.4mm)&lt;/b&gt;&lt;p&gt;
@@ -480,41 +489,44 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 </symbol>
 <symbol name="BM78SPP05NC2">
 <wire x1="-15.24" y1="-25.4" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="25.4" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="25.4" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
-<pin name="GND" x="-20.32" y="22.86" length="middle"/>
-<pin name="BAT_IN" x="-20.32" y="10.16" length="middle"/>
-<pin name="SW_BTN" x="-20.32" y="7.62" length="middle"/>
-<pin name="LDO33_O" x="-20.32" y="5.08" length="middle"/>
-<pin name="VDD_IO" x="-20.32" y="2.54" length="middle"/>
-<pin name="LDO18_O" x="-20.32" y="0" length="middle"/>
-<pin name="WAKEUP" x="-20.32" y="-2.54" length="middle"/>
-<pin name="PMULDO_O" x="-20.32" y="-5.08" length="middle"/>
-<pin name="P0_4" x="-20.32" y="-7.62" length="middle"/>
-<pin name="P1_5" x="-20.32" y="-10.16" length="middle"/>
-<pin name="P1_2/SCL" x="-20.32" y="-12.7" length="middle"/>
-<pin name="P1_3/SDA" x="-20.32" y="-15.24" length="middle"/>
-<pin name="P1_7" x="-7.62" y="-30.48" length="middle" rot="R90"/>
+<wire x1="15.24" y1="-25.4" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="27.94" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
+<pin name="GND" x="-20.32" y="25.4" length="middle"/>
+<pin name="GN2" x="-20.32" y="15.24" length="middle"/>
+<pin name="SW_BTN" x="-20.32" y="10.16" length="middle"/>
+<pin name="LDO33_O" x="-20.32" y="7.62" length="middle"/>
+<pin name="VDD_IO" x="-20.32" y="5.08" length="middle"/>
+<pin name="LDO18_O" x="-20.32" y="2.54" length="middle"/>
+<pin name="WAKEUP" x="-20.32" y="0" length="middle"/>
+<pin name="PMULDO_O" x="-20.32" y="-2.54" length="middle"/>
+<pin name="P0_4" x="-20.32" y="-5.08" length="middle"/>
+<pin name="P1_5" x="-20.32" y="-7.62" length="middle"/>
+<pin name="P1_2/SCL" x="-20.32" y="-10.16" length="middle"/>
+<pin name="P1_3/SDA" x="-20.32" y="-12.7" length="middle"/>
+<pin name="P1_7/CTS" x="-7.62" y="-30.48" length="middle" rot="R90"/>
 <pin name="P0_5" x="-5.08" y="-30.48" length="middle" rot="R90"/>
-<pin name="P0_0" x="-2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_0/RTS" x="-2.54" y="-30.48" length="middle" rot="R90"/>
 <pin name="P2_0" x="0" y="-30.48" length="middle" rot="R90"/>
 <pin name="P2_4" x="2.54" y="-30.48" length="middle" rot="R90"/>
 <pin name="EAN" x="5.08" y="-30.48" length="middle" rot="R90"/>
 <pin name="RST_N" x="7.62" y="-30.48" length="middle" rot="R90"/>
-<pin name="HCI_RXD" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="HCI_TXD" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="P3_1" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="P3_2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="P3_3" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="P3_4" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="P3_6" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="P3_7" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="LED1" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="GND1" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="BT_RF" x="20.32" y="22.86" length="middle" rot="R180"/>
-<text x="-15.24" y="28.448" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="25.908" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RXD" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="TXD" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="P3_1" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="P3_2" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="P3_3" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="P3_4" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="P3_6" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="P3_7" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="LED" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="GND3" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="GND5" x="20.32" y="25.4" length="middle" rot="R180"/>
+<text x="-15.24" y="30.988" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="28.448" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND1" x="-20.32" y="22.86" length="middle"/>
+<pin name="BAT_IN" x="-20.32" y="12.7" length="middle"/>
+<pin name="GND4" x="20.32" y="22.86" length="middle" rot="R180"/>
 </symbol>
 <symbol name="7BB-20-6L0">
 <pin name="POW+" x="-2.794" y="-13.97" length="middle" rot="R90"/>
@@ -701,33 +713,36 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <device name="" package="BM78SPP05MC2/NC2">
 <connects>
 <connect gate="G$1" pin="BAT_IN" pad="P$2"/>
-<connect gate="G$1" pin="BT_RF" pad="P$30"/>
-<connect gate="G$1" pin="EAN" pad="P$18"/>
-<connect gate="G$1" pin="GND" pad="P$1"/>
-<connect gate="G$1" pin="GND1" pad="P$29"/>
-<connect gate="G$1" pin="HCI_RXD" pad="P$20"/>
-<connect gate="G$1" pin="HCI_TXD" pad="P$21"/>
+<connect gate="G$1" pin="EAN" pad="P$29"/>
+<connect gate="G$1" pin="GN2" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$31"/>
+<connect gate="G$1" pin="GND1" pad="P$13"/>
+<connect gate="G$1" pin="GND3" pad="P$14"/>
+<connect gate="G$1" pin="GND4" pad="P$32"/>
+<connect gate="G$1" pin="GND5" pad="P$33"/>
 <connect gate="G$1" pin="LDO18_O" pad="P$6"/>
 <connect gate="G$1" pin="LDO33_O" pad="P$4"/>
-<connect gate="G$1" pin="LED1" pad="P$28"/>
-<connect gate="G$1" pin="P0_0" pad="P$15"/>
+<connect gate="G$1" pin="LED" pad="P$15"/>
+<connect gate="G$1" pin="P0_0/RTS" pad="P$26"/>
 <connect gate="G$1" pin="P0_4" pad="P$9"/>
-<connect gate="G$1" pin="P0_5" pad="P$14"/>
+<connect gate="G$1" pin="P0_5" pad="P$25"/>
 <connect gate="G$1" pin="P1_2/SCL" pad="P$11"/>
 <connect gate="G$1" pin="P1_3/SDA" pad="P$12"/>
 <connect gate="G$1" pin="P1_5" pad="P$10"/>
-<connect gate="G$1" pin="P1_7" pad="P$13"/>
-<connect gate="G$1" pin="P2_0" pad="P$16"/>
-<connect gate="G$1" pin="P2_4" pad="P$17"/>
-<connect gate="G$1" pin="P3_1" pad="P$22"/>
-<connect gate="G$1" pin="P3_2" pad="P$23"/>
-<connect gate="G$1" pin="P3_3" pad="P$24"/>
-<connect gate="G$1" pin="P3_4" pad="P$25"/>
-<connect gate="G$1" pin="P3_6" pad="P$26"/>
-<connect gate="G$1" pin="P3_7" pad="P$27"/>
+<connect gate="G$1" pin="P1_7/CTS" pad="P$24"/>
+<connect gate="G$1" pin="P2_0" pad="P$27"/>
+<connect gate="G$1" pin="P2_4" pad="P$28"/>
+<connect gate="G$1" pin="P3_1" pad="P$21"/>
+<connect gate="G$1" pin="P3_2" pad="P$20"/>
+<connect gate="G$1" pin="P3_3" pad="P$19"/>
+<connect gate="G$1" pin="P3_4" pad="P$18"/>
+<connect gate="G$1" pin="P3_6" pad="P$17"/>
+<connect gate="G$1" pin="P3_7" pad="P$16"/>
 <connect gate="G$1" pin="PMULDO_O" pad="P$8"/>
-<connect gate="G$1" pin="RST_N" pad="P$19"/>
+<connect gate="G$1" pin="RST_N" pad="P$30"/>
+<connect gate="G$1" pin="RXD" pad="P$23"/>
 <connect gate="G$1" pin="SW_BTN" pad="P$3"/>
+<connect gate="G$1" pin="TXD" pad="P$22"/>
 <connect gate="G$1" pin="VDD_IO" pad="P$5"/>
 <connect gate="G$1" pin="WAKEUP" pad="P$7"/>
 </connects>
