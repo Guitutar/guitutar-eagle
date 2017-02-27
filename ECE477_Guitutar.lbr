@@ -399,7 +399,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <pin name="MCLR" x="-66.04" y="0" length="middle"/>
 <pin name="AN19/C2INC/RPG9/PMA2/RG9" x="-66.04" y="-2.54" length="middle"/>
 <pin name="VSS1" x="-66.04" y="-5.08" length="middle"/>
-<pin name="VDD1" x="-66.04" y="-7.62" length="middle"/>
+<pin name="VDD@1" x="-66.04" y="-7.62" length="middle"/>
 <pin name="TMS/CTED1/RA0" x="-66.04" y="-10.16" length="middle"/>
 <pin name="AN32/RPE8/RE8" x="-66.04" y="-12.7" length="middle"/>
 <pin name="AN33/RPE9/RE9" x="-66.04" y="-15.24" length="middle"/>
@@ -420,7 +420,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <pin name="CVREFOUT/AN10/RPB10/CTED11/PMA13/RB10" x="-10.16" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN11/PMA12/RB11" x="-7.62" y="-66.04" length="middle" rot="R90"/>
 <pin name="VSS2" x="-5.08" y="-66.04" length="middle" rot="R90"/>
-<pin name="VDD2" x="-2.54" y="-66.04" length="middle" rot="R90"/>
+<pin name="VDD@2" x="-2.54" y="-66.04" length="middle" rot="R90"/>
 <pin name="TCK/CTED2/RA1" x="0" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN34/RPF13/SCK3/RF13" x="2.54" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN35/RPF12/RF12" x="5.08" y="-66.04" length="middle" rot="R90"/>
@@ -429,7 +429,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <pin name="AN14/RPB14/CTED5/PMA1/RB14" x="12.7" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN15/RPB15/OCFB/CTED6/PMA0/RB15" x="15.24" y="-66.04" length="middle" rot="R90"/>
 <pin name="VSS3" x="17.78" y="-66.04" length="middle" rot="R90"/>
-<pin name="VDD3" x="20.32" y="-66.04" length="middle" rot="R90"/>
+<pin name="VDD@3" x="20.32" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN36/RPD14/RD14" x="22.86" y="-66.04" length="middle" rot="R90"/>
 <pin name="AN37/RPD15/SCK4/RD15" x="25.4" y="-66.04" length="middle" rot="R90"/>
 <pin name="RPF4/PMA9/RF4" x="27.94" y="-66.04" length="middle" rot="R90"/>
@@ -445,7 +445,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <pin name="SDA2/RA3" x="66.04" y="-10.16" length="middle" rot="R180"/>
 <pin name="TDI/CTED9/RA4" x="66.04" y="-7.62" length="middle" rot="R180"/>
 <pin name="TDO/RA5" x="66.04" y="-5.08" length="middle" rot="R180"/>
-<pin name="VDD4" x="66.04" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD@4" x="66.04" y="-2.54" length="middle" rot="R180"/>
 <pin name="OSC1/CLKI/RC12" x="66.04" y="0" length="middle" rot="R180"/>
 <pin name="OSC2/CLKO/RC15" x="66.04" y="2.54" length="middle" rot="R180"/>
 <pin name="VSS4" x="66.04" y="5.08" length="middle" rot="R180"/>
@@ -469,7 +469,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <pin name="AN42/C3INC/PMD14/RD6" x="12.7" y="66.04" length="middle" rot="R270"/>
 <pin name="AN43/C3INB/PMD15/RD7" x="10.16" y="66.04" length="middle" rot="R270"/>
 <pin name="VCAP" x="7.62" y="66.04" length="middle" rot="R270"/>
-<pin name="VDD5" x="5.08" y="66.04" length="middle" rot="R270"/>
+<pin name="VDD@5" x="5.08" y="66.04" length="middle" rot="R270"/>
 <pin name="AN44/C3INA/RPF0/PMD11/RF0" x="2.54" y="66.04" length="middle" rot="R270"/>
 <pin name="AN45/RPF1/PMD10/RF1" x="0" y="66.04" length="middle" rot="R270"/>
 <pin name="RPG1/PMD9/RG1" x="-2.54" y="66.04" length="middle" rot="R270"/>
@@ -685,11 +685,11 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <connect gate="G$1" pin="VBUS" pad="54"/>
 <connect gate="G$1" pin="VCAP" pad="85"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VDD1" pad="16"/>
-<connect gate="G$1" pin="VDD2" pad="37"/>
-<connect gate="G$1" pin="VDD3" pad="46"/>
-<connect gate="G$1" pin="VDD4" pad="62"/>
-<connect gate="G$1" pin="VDD5" pad="86"/>
+<connect gate="G$1" pin="VDD@1" pad="16"/>
+<connect gate="G$1" pin="VDD@2" pad="37"/>
+<connect gate="G$1" pin="VDD@3" pad="46"/>
+<connect gate="G$1" pin="VDD@4" pad="62"/>
+<connect gate="G$1" pin="VDD@5" pad="86"/>
 <connect gate="G$1" pin="VREF+/PMA6/RA10" pad="29"/>
 <connect gate="G$1" pin="VREF-/PMA7/RA9" pad="28"/>
 <connect gate="G$1" pin="VSS1" pad="15"/>
