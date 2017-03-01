@@ -9325,10 +9325,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="U$2" gate="G$1" pin="PGEC2/AN6/RPB6/RB6"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="FRET17" class="0">
 <segment>
 <wire x1="111.76" y1="53.34" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="PGED2/AN7/RPB7/CTED3/RB7"/>
+<label x="111.76" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -10426,7 +10427,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="255.778" y1="139.192" x2="252.476" y2="139.192" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="FRET16" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="121.92" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
