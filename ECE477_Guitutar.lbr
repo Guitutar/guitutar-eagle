@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -269,7 +269,7 @@
 <rectangle x1="-7.878" y1="5.365" x2="-6.873" y2="5.635" layer="51"/>
 <rectangle x1="-7.878" y1="5.865" x2="-6.873" y2="6.135" layer="51"/>
 </package>
-<package name="BM78SPP05MC2/NC2">
+<package name="BM78SPPS5MC2/NC2">
 <wire x1="0" y1="0" x2="12" y2="0" width="0.127" layer="21"/>
 <smd name="P$1" x="0.2" y="13.9" dx="1.5" dy="0.7" layer="1"/>
 <smd name="P$2" x="0.2" y="12.8" dx="1.5" dy="0.7" layer="1"/>
@@ -487,7 +487,7 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="BM78SPP05NC2">
+<symbol name="BM78SPPS5NC2">
 <wire x1="-15.24" y1="-25.4" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-25.4" x2="15.24" y2="27.94" width="0.254" layer="94"/>
 <wire x1="15.24" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
@@ -705,12 +705,12 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BM78SPP05MC2/NC2">
+<deviceset name="BM78SPPS5MC2/NC2">
 <gates>
-<gate name="G$1" symbol="BM78SPP05NC2" x="0" y="0"/>
+<gate name="G$1" symbol="BM78SPPS5NC2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BM78SPP05MC2/NC2">
+<device name="" package="BM78SPPS5MC2/NC2">
 <connects>
 <connect gate="G$1" pin="BAT_IN" pad="P$2"/>
 <connect gate="G$1" pin="EAN" pad="P$29"/>
