@@ -9963,6 +9963,7 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="R10" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
+<part name="U$70" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10144,6 +10145,7 @@ Circuit</text>
 <instance part="R10" gate="G$1" x="175.26" y="251.46" rot="R90"/>
 <instance part="R11" gate="G$1" x="132.08" y="259.08" rot="R90"/>
 <instance part="R12" gate="G$1" x="121.92" y="256.54" rot="R90"/>
+<instance part="U$70" gate="G$1" x="396.24" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -11679,6 +11681,13 @@ Circuit</text>
 <pinref part="PAD4" gate="G$1" pin="P"/>
 <wire x1="220.98" y1="266.7" x2="220.98" y2="254" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="AMP" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="RPF5/PMA8/RF5"/>
+<wire x1="86.36" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
+<label x="83.82" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
