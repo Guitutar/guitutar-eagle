@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -482,6 +482,20 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <wire x1="2.35" y1="-1.5" x2="2.35" y2="1.45" width="0.127" layer="21"/>
 <wire x1="2.35" y1="1.45" x2="-2.4" y2="1.45" width="0.127" layer="21"/>
 </package>
+<package name="MNR04">
+<smd name="P$5" x="-0.8" y="0.5" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$1" x="-0.8" y="-0.5" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$8" x="0.7" y="0.5" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$4" x="0.7" y="-0.5" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$6" x="-0.3" y="0.5" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$7" x="0.2" y="0.5" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.3" y="-0.5" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$3" x="0.2" y="-0.5" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.8" y1="0.5" x2="0.7" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.7" y1="0.5" x2="0.7" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-0.5" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="0.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIC32MX570F512L">
@@ -744,6 +758,20 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <text x="-10.414" y="3.048" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.414" y="-4.826" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MNR04MRAPJ680">
+<wire x1="-5.08" y1="6.35" x2="5.08" y2="6.35" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="3.81" length="middle"/>
+<pin name="P$2" x="-7.62" y="1.27" length="middle"/>
+<pin name="P$3" x="-7.62" y="-1.27" length="middle"/>
+<pin name="P$4" x="-7.62" y="-3.81" length="middle"/>
+<pin name="P$5" x="7.62" y="3.81" length="middle" rot="R180"/>
+<pin name="P$6" x="7.62" y="1.27" length="middle" rot="R180"/>
+<pin name="P$7" x="7.62" y="-1.27" length="middle" rot="R180"/>
+<pin name="P$8" x="7.62" y="-3.81" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="6.35" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-6.35" x2="5.08" y2="6.35" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PIC32MX570F512L">
@@ -996,6 +1024,28 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MNR04MRAPJ680">
+<gates>
+<gate name="MNR04MRAPJ680" symbol="MNR04MRAPJ680" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MNR04">
+<connects>
+<connect gate="MNR04MRAPJ680" pin="P$1" pad="P$1"/>
+<connect gate="MNR04MRAPJ680" pin="P$2" pad="P$2"/>
+<connect gate="MNR04MRAPJ680" pin="P$3" pad="P$3"/>
+<connect gate="MNR04MRAPJ680" pin="P$4" pad="P$4"/>
+<connect gate="MNR04MRAPJ680" pin="P$5" pad="P$5"/>
+<connect gate="MNR04MRAPJ680" pin="P$6" pad="P$6"/>
+<connect gate="MNR04MRAPJ680" pin="P$7" pad="P$7"/>
+<connect gate="MNR04MRAPJ680" pin="P$8" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
