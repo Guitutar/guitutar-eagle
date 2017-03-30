@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9102,7 +9102,7 @@ Source: www.kingbright.com</description>
 <junction x="101.6" y="71.12"/>
 </segment>
 </net>
-<net name="N$48" class="0">
+<net name="SCK" class="0">
 <segment>
 <wire x1="96.52" y1="231.14" x2="96.52" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="177.8" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
@@ -9123,7 +9123,7 @@ Source: www.kingbright.com</description>
 <junction x="96.52" y="66.04"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="RCK" class="0">
 <segment>
 <wire x1="99.06" y1="233.68" x2="99.06" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="180.34" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
@@ -9532,7 +9532,7 @@ Source: www.kingbright.com</description>
 <wire x1="38.1" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="SCLR" class="0">
 <segment>
 <wire x1="86.36" y1="228.6" x2="93.98" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="SCLR"/>
