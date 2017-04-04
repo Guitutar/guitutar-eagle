@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8535,9 +8535,9 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="C8" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="M0805"/>
-<part name="LED1" library="led" deviceset="LED" device="SMT1206"/>
+<part name="C1" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="M0805" value="68"/>
+<part name="D1" library="led" deviceset="LED" device="SMT1206"/>
 <part name="SUPPLY4" library="supply2" deviceset="VDD" device="" value="3.3V"/>
 <part name="LED2" library="led" deviceset="LED" device="SMT1206"/>
 <part name="LED3" library="led" deviceset="LED" device="SMT1206"/>
@@ -8611,10 +8611,10 @@ Source: www.kingbright.com</description>
 <part name="U$36" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0805" value="330k"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="R0805" value="330k"/>
-<part name="U$37" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
-<part name="U$38" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="330k"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0805" value="330k"/>
+<part name="RN1" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
+<part name="RN2" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
 <part name="U$39" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
 <part name="U$40" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
 <part name="U$41" library="ECE477_Guitutar" deviceset="MNR04MRAPJ680" device=""/>
@@ -8629,9 +8629,9 @@ Source: www.kingbright.com</description>
 <plain>
 </plain>
 <instances>
-<instance part="C8" gate="G$1" x="149.86" y="236.22"/>
-<instance part="R3" gate="G$1" x="160.02" y="208.28" rot="R90"/>
-<instance part="LED1" gate="G$1" x="160.02" y="198.12"/>
+<instance part="C1" gate="G$1" x="149.86" y="236.22"/>
+<instance part="R1" gate="G$1" x="160.02" y="208.28" rot="R90"/>
+<instance part="D1" gate="G$1" x="160.02" y="198.12"/>
 <instance part="SUPPLY4" gate="G$1" x="139.7" y="238.76" rot="R90"/>
 <instance part="LED2" gate="G$1" x="30.48" y="254" rot="R270"/>
 <instance part="LED3" gate="G$1" x="30.48" y="246.38" rot="R270"/>
@@ -8706,10 +8706,10 @@ Source: www.kingbright.com</description>
 <instance part="U$36" gate="G$1" x="297.18" y="55.88"/>
 <instance part="H1" gate="G$1" x="182.88" y="157.48"/>
 <instance part="H2" gate="G$1" x="182.88" y="144.78"/>
-<instance part="R6" gate="G$1" x="205.74" y="96.52"/>
-<instance part="R7" gate="G$1" x="205.74" y="83.82"/>
-<instance part="U$37" gate="MNR04MRAPJ680" x="48.26" y="242.57"/>
-<instance part="U$38" gate="MNR04MRAPJ680" x="48.26" y="229.87"/>
+<instance part="R2" gate="G$1" x="205.74" y="96.52"/>
+<instance part="R3" gate="G$1" x="205.74" y="83.82"/>
+<instance part="RN1" gate="MNR04MRAPJ680" x="48.26" y="242.57"/>
+<instance part="RN2" gate="MNR04MRAPJ680" x="48.26" y="229.87"/>
 <instance part="U$39" gate="MNR04MRAPJ680" x="48.26" y="189.23"/>
 <instance part="U$40" gate="MNR04MRAPJ680" x="48.26" y="176.53"/>
 <instance part="U$41" gate="MNR04MRAPJ680" x="48.26" y="133.35"/>
@@ -8728,7 +8728,7 @@ Source: www.kingbright.com</description>
 <wire x1="198.12" y1="233.68" x2="185.42" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="233.68" x2="185.42" y2="231.14" width="0.1524" layer="91"/>
 <junction x="185.42" y="231.14"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="231.14" x2="160.02" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="231.14" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="LDO33_O"/>
@@ -9060,7 +9060,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="LED" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="160.02" y1="193.04" x2="160.02" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="175.26" x2="264.16" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="175.26" x2="264.16" y2="236.22" width="0.1524" layer="91"/>
@@ -9104,8 +9104,8 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="203.2" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9116,7 +9116,7 @@ Source: www.kingbright.com</description>
 <label x="187.96" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="238.76" x2="198.12" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="238.76" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
 <junction x="149.86" y="238.76"/>
@@ -9278,7 +9278,7 @@ Source: www.kingbright.com</description>
 <junction x="58.42" y="53.34"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="231.14" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
@@ -9410,28 +9410,28 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="QB"/>
 <wire x1="60.96" y1="243.84" x2="55.88" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$6"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$6"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="QC"/>
 <wire x1="60.96" y1="241.3" x2="55.88" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$7"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$7"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="QD"/>
 <wire x1="60.96" y1="238.76" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$8"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$8"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="QE"/>
 <wire x1="60.96" y1="236.22" x2="55.88" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="MNR04MRAPJ680" pin="P$5"/>
+<pinref part="RN2" gate="MNR04MRAPJ680" pin="P$5"/>
 <wire x1="55.88" y1="236.22" x2="55.88" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9440,7 +9440,7 @@ Source: www.kingbright.com</description>
 <pinref part="U$4" gate="G$1" pin="QF"/>
 <wire x1="60.96" y1="233.68" x2="58.42" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="233.68" x2="58.42" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="MNR04MRAPJ680" pin="P$6"/>
+<pinref part="RN2" gate="MNR04MRAPJ680" pin="P$6"/>
 <wire x1="58.42" y1="231.14" x2="55.88" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9451,7 +9451,7 @@ Source: www.kingbright.com</description>
 <wire x1="91.44" y1="256.54" x2="91.44" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="QA"/>
 <wire x1="91.44" y1="241.3" x2="86.36" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$5"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$5"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9459,7 +9459,7 @@ Source: www.kingbright.com</description>
 <wire x1="38.1" y1="246.38" x2="38.1" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
 <wire x1="38.1" y1="261.62" x2="33.02" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$1"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$1"/>
 <wire x1="38.1" y1="246.38" x2="40.64" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9468,7 +9468,7 @@ Source: www.kingbright.com</description>
 <wire x1="35.56" y1="243.84" x2="35.56" y2="254" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="254" x2="33.02" y2="254" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$2"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$2"/>
 <wire x1="35.56" y1="243.84" x2="40.64" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9476,7 +9476,7 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="33.02" y1="241.3" x2="33.02" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$3"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$3"/>
 <wire x1="33.02" y1="241.3" x2="40.64" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9485,7 +9485,7 @@ Source: www.kingbright.com</description>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="231.14" x2="33.02" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="231.14" x2="35.56" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="MNR04MRAPJ680" pin="P$1"/>
+<pinref part="RN2" gate="MNR04MRAPJ680" pin="P$1"/>
 <wire x1="35.56" y1="233.68" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9494,7 +9494,7 @@ Source: www.kingbright.com</description>
 <pinref part="LED6" gate="G$1" pin="A"/>
 <wire x1="38.1" y1="223.52" x2="33.02" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="223.52" x2="38.1" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="MNR04MRAPJ680" pin="P$2"/>
+<pinref part="RN2" gate="MNR04MRAPJ680" pin="P$2"/>
 <wire x1="38.1" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9859,7 +9859,7 @@ Source: www.kingbright.com</description>
 <net name="FRET1" class="0">
 <segment>
 <label x="243.84" y="96.52" size="1.778" layer="95" xref="yes"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9876,7 +9876,7 @@ Source: www.kingbright.com</description>
 <net name="FRET2" class="0">
 <segment>
 <label x="243.84" y="83.82" size="1.778" layer="95" xref="yes"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="83.82" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9893,21 +9893,21 @@ Source: www.kingbright.com</description>
 <net name="N$116" class="0">
 <segment>
 <pinref part="PAD1" gate="G$1" pin="P"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$117" class="0">
 <segment>
 <pinref part="PAD2" gate="G$1" pin="P"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<pinref part="U$37" gate="MNR04MRAPJ680" pin="P$4"/>
+<pinref part="RN1" gate="MNR04MRAPJ680" pin="P$4"/>
 <wire x1="33.02" y1="238.76" x2="40.64" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
