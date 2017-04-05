@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6259,6 +6259,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R4" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="M0805" value="330k"/>
+<part name="U$80" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
+<part name="U$81" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
+<part name="U$82" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
+<part name="U$83" library="ECE477_Guitutar" deviceset="JUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6396,6 +6400,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R4" gate="G$1" x="154.94" y="251.46"/>
 <instance part="R5" gate="G$1" x="208.28" y="251.46"/>
 <instance part="R6" gate="G$1" x="246.38" y="251.46"/>
+<instance part="U$80" gate="G$1" x="256.54" y="20.32"/>
+<instance part="U$81" gate="G$1" x="256.54" y="15.24"/>
+<instance part="U$82" gate="G$1" x="256.54" y="10.16"/>
+<instance part="U$83" gate="G$1" x="256.54" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -6561,6 +6569,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="177.8" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$73" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<pinref part="U$83" gate="G$1" pin="P$2"/>
+<wire x1="264.16" y1="5.08" x2="266.7" y2="5.08" width="0.1524" layer="91"/>
+<label x="266.7" y="5.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="5.08" x2="246.38" y2="5.08" width="0.1524" layer="91"/>
+<label x="246.38" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$83" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -6588,6 +6606,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="195.58" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="198.12" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="248.92" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<label x="246.38" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$80" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U$80" gate="G$1" pin="P$2"/>
+<wire x1="264.16" y1="20.32" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="266.7" y="20.32" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RCK" class="0">
 <segment>
@@ -6614,6 +6642,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="180.34" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
 <label x="177.8" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$72" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U$82" gate="G$1" pin="P$2"/>
+<wire x1="264.16" y1="10.16" x2="266.7" y2="10.16" width="0.1524" layer="91"/>
+<label x="266.7" y="10.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="10.16" x2="246.38" y2="10.16" width="0.1524" layer="91"/>
+<label x="246.38" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$82" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -6772,6 +6810,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$71" gate="G$1" pin="P$2"/>
 <wire x1="195.58" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
 <label x="198.12" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="15.24" x2="246.38" y2="15.24" width="0.1524" layer="91"/>
+<label x="246.38" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$81" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U$81" gate="G$1" pin="P$2"/>
+<wire x1="264.16" y1="15.24" x2="266.7" y2="15.24" width="0.1524" layer="91"/>
+<label x="266.7" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED_SER1" class="0">
